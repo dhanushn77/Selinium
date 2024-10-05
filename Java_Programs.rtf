@@ -1,0 +1,332 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil Courier New;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red42\green0\blue255;\red0\green0\blue192;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs40 1.WAP to separaete the numbers,Alphates and special character\f1\lang9\par
+\par
+package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test0 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2\tab\tab String \cf3 s\cf2 =\cf4 "#$asds#$$4545A"\cf2 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab String \cf3 alpa\cf2 =\cf4 ""\cf2 ;\cf0\par
+\cf2\tab\tab String \cf3 numb\cf2 =\cf4 ""\cf2 ;\cf0\par
+\cf2\tab\tab String \cf3 spchar\cf2 =\cf4 ""\cf2 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 s\cf2 .length();\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (\cf3 s\cf2 .charAt(\cf3 i\cf2 )>=\cf4 'a'\cf2 && \cf3 s\cf2 .charAt(\cf3 i\cf2 )<=\cf4 'z'\cf2  ||\cf0\par
+\cf2\tab\tab\tab\tab\cf3 s\cf2 .charAt(\cf3 i\cf2 )>=\cf4 'A'\cf2  && \cf3 s\cf2 .charAt(\cf3 i\cf2 )<=\cf4 'Z'\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf3 alpa\cf2 =\cf3 alpa\cf2 +\cf3 s\cf2 .charAt(\cf3 i\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf3 s\cf2 .charAt(\cf3 i\cf2 )>=0 && \cf3 s\cf2 .charAt(\cf3 i\cf2 )<=9)\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 numb\cf2 =\cf3 numb\cf2 +\cf3 s\cf2 .charAt(\cf3 i\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\par
+\par
+\cf2\tab\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 spchar\cf2 =\cf3 spchar\cf2 +\cf3 s\cf2 .charAt(\cf3 i\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\par
+\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 alpa\cf2 +\cf3 numb\cf2 +\cf3 spchar\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\par
+\par
+\par
+\f0\lang1033 2.Palidrom word\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test1 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "mom"\cf2 ;\cf0\par
+\cf2 String \cf3 rev\cf2 =\cf4 ""\cf2 ;\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =\cf3 s\cf2 .length()-1;\cf3 i\cf2 >=0;\cf3 i\cf2 --) \{\cf0\par
+\cf2\tab\cf3 rev\cf2 =\cf3 rev\cf2 +\cf3 s\cf2 .charAt(\cf3 i\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf1\b if\cf2\b0 (\cf3 s\cf2 .equals(\cf3 rev\cf2 )) \{\cf0\par
+\cf2\tab System.\cf5\b\i out\cf2\b0\i0 .println(\cf4 "pali"\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf1\b else\cf0\b0\par
+\cf2\{\cf0\par
+\cf2\tab System.\cf5\b\i out\cf2\b0\i0 .println(\cf4 "it not pali"\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 3.Reverse the string\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test10 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "welcometo new year"\cf2 ;\cf0\par
+\cf2 String \cf3 rev\cf2 =\cf4 ""\cf2 ;\cf0\par
+\cf2 String[] \cf3 str\cf2  = \cf3 s\cf2 .split(\cf4 " "\cf2 );\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 str\cf2 .\cf5 length\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\cf3 rev\cf2 =\cf3 str\cf2 [\cf3 i\cf2 ]+\cf4 " "\cf2 +\cf3 rev\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 rev\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 4.Reverse the word\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test11 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "hello"\cf2 ;\cf0\par
+\cf2 String \cf3 rev\cf2 =\cf4 ""\cf2 ;\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =\cf3 s\cf2 .length()-1;\cf3 i\cf2 >=0;\cf3 i\cf2 --) \{\cf0\par
+\cf2\tab\cf3 rev\cf2 =\cf3 rev\cf2 +\cf3 s\cf2 .charAt(\cf3 i\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 rev\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\lang9\par
+\f0\lang1033 5.Even and odd number\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test12 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2  \cf1\b int\cf2\b0  \cf3 num\cf2 =7;\cf0\par
+\cf2  \cf0\par
+\cf2  \cf1\b if\cf2\b0 (\cf3 num\cf2 %2==0) \{\cf0\par
+\cf2\tab  System.\cf5\b\i out\cf2\b0\i0 .println(\cf4 "even"\cf2 );\cf0\par
+\cf2  \}\cf0\par
+\cf2  \cf1\b else\cf0\b0\par
+\cf2  \{\cf0\par
+\cf2\tab  System.\cf5\b\i out\cf2\b0\i0 .println(\cf4 "odd"\cf2 );\cf0\par
+\cf2  \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 6.WAP to print common numbers between two arrays\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test2 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf1\b int\cf2\b0  \cf3 arr1\cf2 []= \{1,2,3,4,5\};\cf0\par
+\cf1\b int\cf2\b0  \cf3 arr2\cf2 []= \{1,2,3,6,7\};\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 arr1\cf2 .\cf5 length\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =0;\cf3 j\cf2 <\cf3 arr2\cf2 .\cf5 length\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf3 arr1\cf2 [\cf3 i\cf2 ]==\cf3 arr2\cf2 [\cf3 j\cf2 ]) \{\cf0\par
+\cf2\tab\tab\tab System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 arr1\cf2 [\cf3 i\cf2 ]);\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\par
+\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\par
+\f0 7.Factorial\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test4 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf1\b int\cf2\b0  \cf3 n\cf2 =5;\cf0\par
+\cf1\b int\cf2\b0  \cf3 fact\cf2 =1;\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =1;\cf3 i\cf2 <=\cf3 n\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\cf3 fact\cf2 =\cf3 fact\cf2 *\cf3 i\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 fact\cf2 );\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 8.Fibonanice series\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test5 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf1\b int\cf2\b0  \cf3 fib1\cf2 =0;\cf0\par
+\cf1\b int\cf2\b0  \cf3 fib2\cf2 =1;\cf0\par
+\cf1\b int\cf2\b0  \cf3 fib3\cf2 ;\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <=10;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\cf3 fib3\cf2 =\cf3 fib1\cf2 +\cf3 fib2\cf2 ;\cf0\par
+\cf2\tab\cf3 fib1\cf2 =\cf3 fib2\cf2 ;\cf0\par
+\cf2\tab\cf3 fib2\cf2 =\cf3 fib3\cf2 ;\cf0\par
+\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 fib3\cf2 );\tab\cf0\par
+\cf2\}\}\cf0\par
+\par
+\par
+\cf2\tab\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 9.WAP TO print count of the each character\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.LinkedHashSet;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test6 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "Hello Ganesha"\cf2 ;\cf0\par
+\par
+\cf2 LinkedHashSet<Character>\cf3 set\cf2 =\cf1\b new\cf2\b0  LinkedHashSet<Character>();\cf0\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 s\cf2 .length();\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\cf3 set\cf2 .add(\cf3 s\cf2 .charAt(\cf3 i\cf2 ));\cf0\par
+\cf2\}\cf0\par
+\par
+\cf1\b for\cf2\b0 (Character \cf3 ch\cf2 :\cf3 set\cf2 ) \{\cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 count\cf2  =0;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 s\cf2 .length();\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf3 ch\cf2 ==\cf3 s\cf2 .charAt(\cf3 i\cf2 )) \{\cf0\par
+\cf2\tab\tab\tab\cf3 count\cf2  ++;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab System.\cf5\b\i out\cf2\b0\i0 .print(\cf3 ch\cf2 );\cf0\par
+\cf2\tab System.\cf5\b\i out\cf2\b0\i0 .print(\cf3 count\cf2 );\cf0\par
+\cf2\}\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 10.Remove the duplicate letter\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.LinkedHashSet;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test7 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "Hello"\cf2 ;\cf0\par
+\par
+\cf1\b char\cf2\b0 [] \cf3 chars\cf2  = \cf3 s\cf2 .toCharArray();\cf0\par
+\cf2 LinkedHashSet<Character>\cf3 set\cf2 =\cf1\b new\cf2\b0  LinkedHashSet<Character>();\cf0\par
+\cf1\b for\cf2\b0 (\cf1\b char\cf2\b0  \cf3 c\cf2 :\cf3 chars\cf2 ) \{\cf0\par
+\cf2\tab\cf3 set\cf2 .add(\cf3 c\cf2 );\cf0\par
+\cf2\}\cf0\par
+\par
+\cf2 StringBuilder \cf3 sb\cf2 =\cf1\b new\cf2\b0  StringBuilder();\cf0\par
+\cf1\b for\cf2\b0 (Character \cf3 charcter\cf2 :\cf3 set\cf2 ) \{\cf0\par
+\cf3 sb\cf2 .append(\cf3 charcter\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 sb\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 11.WAP to remove duplicate character\par
+\cf1\b\f1 package\cf2\b0  pro;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.LinkedHashSet;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test8 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "heeeelllooo"\cf2 ;\cf0\par
+\cf1\b char\cf2\b0 [] \cf3 chars\cf2  = \cf3 s\cf2 .toCharArray();\cf0\par
+\cf2 LinkedHashSet<Character>\cf3 charset\cf2 =\cf1\b new\cf2\b0  LinkedHashSet<Character>();\cf0\par
+\cf1\b for\cf2\b0 (\cf1\b char\cf2\b0  \cf3 c\cf2 :\cf3 chars\cf2 ) \{\cf0\par
+\cf2\tab\cf3 charset\cf2 .add(\cf3 c\cf2 );\cf0\par
+\cf2\}\cf0\par
+\par
+\cf2 StringBuilder \cf3 sb\cf2 =\cf1\b new\cf2\b0  StringBuilder();\cf0\par
+\cf1\b for\cf2\b0 (Character \cf3 character\cf2 :\cf3 charset\cf2 ) \{\cf0\par
+\cf2\tab\cf3 sb\cf2 .append(\cf3 character\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 sb\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 12.Number palidrom\par
+\cf1\b\f1 package\cf2\b0  pro1;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test11 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "131"\cf2 ;\cf0\par
+\cf2 String \cf3 rev\cf2 =\cf4 ""\cf2 ;\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =\cf3 s\cf2 .length()-1;\cf3 i\cf2 >=0;\cf3 i\cf2 --) \{\cf0\par
+\cf2\tab\cf3 rev\cf2 =\cf3 rev\cf2 +\cf3 s\cf2 .charAt(\cf3 i\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf1\b if\cf2\b0 (\cf3 s\cf2 .equals(\cf3 rev\cf2 )) \{\cf0\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf4 "pali"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf1\b else\cf0\b0\par
+\cf2\{\cf0\par
+\cf2\tab System.\cf5\b\i out\cf2\b0\i0 .println(\cf4 "not pali"\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf2\}\cf0\par
+\cf2\}\par
+\f0 13.descending order number\par
+\cf1\b\f1 package\cf2\b0  pro1;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test2 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf1\b int\cf2\b0  \cf3 arr\cf2 []= \{1,3,4,5,2\};\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 arr\cf2 .\cf5 length\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =\cf3 i\cf2 +1;\cf3 j\cf2 <\cf3 arr\cf2 .\cf5 length\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf3 arr\cf2 [\cf3 i\cf2 ]<\cf3 arr\cf2 [\cf3 j\cf2 ]) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b int\cf2\b0  \cf3 temp\cf2 =\cf3 arr\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf3 arr\cf2 [\cf3 i\cf2 ]=\cf3 arr\cf2 [\cf3 j\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf3 arr\cf2 [\cf3 j\cf2 ]=\cf3 temp\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 arr\cf2 [\cf3 i\cf2 ]);\cf0\par
+\cf2\}\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0 14.Reverse each letter in the sentance\par
+\cf1\b\f1 package\cf2\b0  progr;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Test63 \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2 String \cf3 s\cf2 =\cf4 "Ganesha The lord"\cf2 ;\cf0\par
+\cf2 String \cf3 rev\cf2 =\cf4 ""\cf2 ;\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =\cf3 s\cf2 .length()-1;\cf3 i\cf2 >=0;\cf3 i\cf2 --) \{\cf0\par
+\cf2\tab\cf3 rev\cf2 =\cf3 rev\cf2 +\cf3 s\cf2 .charAt(\cf3 i\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf2 System.\cf5\b\i out\cf2\b0\i0 .println(\cf3 rev\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\par
+\lang9\par
+\f2\fs22\par
+}
+ 
